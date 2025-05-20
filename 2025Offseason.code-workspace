@@ -1,0 +1,102 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic",
+		"java.server.launchMode": "Standard",
+		"java.import.gradle.annotationProcessing.enabled": false,
+		"java.completion.favoriteStaticMembers": [
+			"org.junit.Assert.*",
+			"org.junit.Assume.*",
+			"org.junit.jupiter.api.Assertions.*",
+			"org.junit.jupiter.api.Assumptions.*",
+			"org.junit.jupiter.api.DynamicContainer.*",
+			"org.junit.jupiter.api.DynamicTest.*",
+			"org.mockito.Mockito.*",
+			"org.mockito.ArgumentMatchers.*",
+			"org.mockito.Answers.*",
+			"edu.wpi.first.units.Units.*"
+		],
+		"java.completion.filteredTypes": [
+			"java.awt.*",
+			"com.sun.*",
+			"sun.*",
+			"jdk.*",
+			"org.graalvm.*",
+			"io.micrometer.shaded.*",
+			"java.beans.*",
+			"java.util.Base64.*",
+			"java.util.Timer",
+			"java.sql.*",
+			"javax.swing.*",
+			"javax.management.*",
+			"javax.smartcardio.*",
+			"edu.wpi.first.math.proto.*",
+			"edu.wpi.first.math.**.proto.*",
+			"edu.wpi.first.math.**.struct.*"
+		],
+		"todohighlight.keywords":[ 
+			{
+			  "text": "TODO",
+			  "color": "black",
+			  "backgroundColor": "green",
+			  "overviewRulerColor": "green"
+			
+			},
+			{
+			  "text": "CHECKME",
+			  "color": "black",
+			  "backgroundColor": "yellow",
+			  "overviewRulerColor": "yellow"
+			
+			},
+			{
+			  "text": "FIXME",
+			  "color": "black",
+			  "backgroundColor": "orange",
+			  "overviewRulerColor": "orange"
+			
+			},
+			{
+			  "text": "KILLME",
+			  "color": "black",
+			  "backgroundColor": "red",
+			  "overviewRulerColor": "red"
+			
+			},
+			{
+			  "text": "WATCHME",
+			  "color": "black",
+			  "backgroundColor": "purple",
+			  "overviewRulerColor": "purple"
+			
+			},
+			{
+			  "text": "NOTE",
+			  "color": "black",
+			  "backgroundColor": "grey",
+			  "overviewRulerColor": "grey"
+			
+			}
+		],
+		"todohighlight.defaultStyle": {
+			
+		},
+		"cSpell.words": [
+			"chassisspeed",
+			"deadzone",
+			"feedforwards",
+			"Fiducials",
+			"Holonomic",
+			"Odometry",
+			"pathfinding",
+			"Setpoint",
+			"swervesubsystem",
+			"Tele",
+			"teleop"
+		]
+	}
+}
