@@ -29,6 +29,14 @@ import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.sysid.SysIdRoutine;
 import frc.robot.commands.DriveCommands;
 import frc.robot.subsystems.drive.*;
+import frc.robot.subsystems.drive.Drive.Drive;
+import frc.robot.subsystems.drive.Drive.DriveConstants;
+import frc.robot.subsystems.drive.Drive.Gyro.GyroIO;
+import frc.robot.subsystems.drive.Drive.Gyro.GyroIOPigeon2;
+import frc.robot.subsystems.drive.Drive.Gyro.GyroIOSim;
+import frc.robot.subsystems.drive.Drive.Module.ModuleIO;
+import frc.robot.subsystems.drive.Drive.Module.ModuleIOSim;
+import frc.robot.subsystems.drive.Drive.Module.ModuleIOSpark;
 import frc.robot.subsystems.vision.*;
 import org.ironmaple.simulation.SimulatedArena;
 import org.ironmaple.simulation.drivesims.SwerveDriveSimulation;
@@ -134,7 +142,7 @@ public class RobotContainer {
     private void configureButtonBindings() {
         // Default command, normal field-relative drive
         drive.setDefaultCommand(DriveCommands.joystickDrive(
-                drive, () -> controller.getRawAxis(1), () -> controller.getRawAxis(0), () -> -controller.getRawAxis(2)));
+                drive, () -> controller.getRawAxis(1), () -> controller.getRawAxis(0), () -> -controller.getRawAxis(4)));
 
         // Lock to 0° when A button is held
         controller

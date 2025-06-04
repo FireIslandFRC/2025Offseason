@@ -11,10 +11,10 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 
-package frc.robot.subsystems.drive;
+package frc.robot.subsystems.drive.Drive;
 
 import static edu.wpi.first.units.Units.*;
-import static frc.robot.subsystems.drive.DriveConstants.*;
+import static frc.robot.subsystems.drive.Drive.DriveConstants.*;
 
 import com.pathplanner.lib.auto.AutoBuilder;
 import com.pathplanner.lib.config.PIDConstants;
@@ -44,6 +44,10 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import edu.wpi.first.wpilibj2.command.sysid.SysIdRoutine;
 import frc.robot.Constants;
 import frc.robot.Constants.Mode;
+import frc.robot.subsystems.drive.Drive.Gyro.GyroIO;
+import frc.robot.subsystems.drive.Drive.Gyro.GyroIOInputsAutoLogged;
+import frc.robot.subsystems.drive.Drive.Module.Module;
+import frc.robot.subsystems.drive.Drive.Module.ModuleIO;
 import frc.robot.subsystems.vision.Vision;
 import frc.robot.util.LocalADStarAK;
 import java.util.concurrent.locks.Lock;
